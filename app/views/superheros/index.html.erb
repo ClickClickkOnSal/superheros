@@ -1,0 +1,5 @@
+<ul>
+<% @superheros.each do |hero| %>
+	<li><%= link_to hero.name.capitalize, superhero_path(hero) %></li>
+<% end %>
+</ul>
