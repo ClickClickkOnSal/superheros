@@ -1,6 +1,7 @@
 <h2>Superheros of Rubytice League!</h2>
-<ul>
+<ul class="heros">
 <% @superheros.each do |hero| %>
-	<li><%= link_to hero.name.capitalize, superhero_path(hero) %></li>
+	<li class="heros"><%= link_to hero.name.split.map(&:capitalize).join(' '), superhero_path(hero) %></li>
 <% end %>
+<%= link_to "New Hero", new_superhero_path %>
 </ul>

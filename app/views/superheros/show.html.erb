@@ -1,7 +1,11 @@
-<ul>
+<ul class="show_heros">
 <li>Superhero Name: <%= @superhero.name.split.map(&:capitalize).join(' ') %></li>
-<li>Has Cape?: <%= @superhero.cape.to_s.capitalize %></li>
+<li>Has Cape? <%= @superhero.cape.to_s.capitalize %></li>
 <li>Super power: <%= @superhero.super_power.split.map(&:capitalize).join(' ').gsub!('.',' ') %></li>
 <li><%= image_tag @superhero.image %></li>
 </ul>
-<%= link_to "Edit Hero", edit_superhero_path(@superhero), method: :edit %>
+<ul class="options">
+<li><%= link_to "Edit Hero", edit_superhero_path(@superhero) %></li>
+<li><%= link_to "Destroy Hero", superhero_path(@superhero), method: :delete %></li>
+<li><%= link_to "Back", superheros_path %></li>
+</ul>

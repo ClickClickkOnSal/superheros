@@ -13,3 +13,78 @@
  *= require_tree .
  *= require_self
  */
+h2 {
+	font-size: 40px;
+	text-align: center;
+	font-family: Rockwell Extra Bold;
+	color: yellow;
+}
+
+html {
+	background-image: url("http://i.imgur.com/JOua3.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-size: 120%;
+}
+
+.heros { 
+	text-align: center;
+	font-size: 30px;
+	margin-top: 30px;
+	margin-bottom: 30px;
+	list-style-type: none;
+}
+
+a {
+	text-decoration: none;
+	color: red;
+	font-weight: bold;
+}
+
+.heros a:hover {
+	font-size: 50px;
+	color: orange;
+}
+
+.show_heros li {
+	color: red;
+	font-size: 25px;
+	list-style-type: none;
+	text-align: center;
+}
+
+.show_heros img {
+	width: 400px;
+	height: 400px%
+}
+
+.options li {
+	margin-bottom: 10px;
+	font-size: 20px;
+}
+
+form {
+	text-align: center;
+	color: red;
+	font-size: 25px;
+	font-weight: bold
+}
+
+#superhero_image {
+	font-size: 15px;
+	font-weight: bold
+}
+
+#superhero_name {
+	font-size: 15px;
+	font-weight: bold
+}
+
+#superhero_super_power {
+	font-size: 15px;
+	font-weight: bold;
+}
+
+.submit {
+	font-size: 50px;
+}
