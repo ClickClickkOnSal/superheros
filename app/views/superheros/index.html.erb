@@ -3,5 +3,5 @@
 <% @superheros.each do |hero| %>
 	<li class="heros"><%= link_to hero.name.split.map(&:capitalize).join(' '), superhero_path(hero) %></li>
 <% end %>
-<%= link_to "New Hero", new_superhero_path %>
+<button><%= link_to "Add New Hero", new_superhero_path, class: "add-hero" %></button>
 </ul>

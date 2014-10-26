@@ -88,3 +88,8 @@ form {
 .submit {
 	font-size: 50px;
 }
+
+.add-hero {
+	font-size: 3em;
+	color: black;
+}
